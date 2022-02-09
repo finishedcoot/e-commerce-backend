@@ -5,6 +5,8 @@ const userRoute = require("./routes/userRoutes");
 const productRoute = require("./routes/productRoutes");
 const cartRoute = require("./routes/cartRoutes");
 const orderRoute = require("./routes/orderRoutes");
+const stripeRoute = require("./routes/stripe");
+const cors = require("cors");
 
 const app = express();
 const mongoose = require("mongoose");
@@ -17,6 +19,7 @@ mongoose
     console.log(err);
   });
 
+app.use(cors());
 app.use(express.json({ limit: "10kb" }));
 
 app.use("/api/auth", auth);
@@ -24,6 +27,7 @@ app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/cart", cartRoute);
 app.use("/api/order", orderRoute);
+app.use("/api/checkout", stripeRoute);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
