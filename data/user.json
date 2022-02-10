@@ -1,0 +1,38 @@
+[
+{"username": "annLuub32",
+"email": "annLuub32@gamail.com",
+"name":"Anna Lubia",
+"password":"test1234",
+"img": "https://images.pexels.com/photos/2050994/pexels-photo-2050994.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+"isAdmin":false},
+
+{"username": "katluz645",
+"email": "Kate@gamail.com",
+"name":"Kate Lubia",
+"password":"test1234",
+"img": "https://images.pexels.com/photos/1729931/pexels-photo-1729931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+"isAdmin":false},
+
+{"username": "funfatyy",
+"email": "Peter@gamail.com",
+"name":"Peter Lubia",
+"password":"test1234",
+"img": "https://images.pexels.com/photos/783941/pexels-photo-783941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+"isAdmin":false},
+
+{"username": "gutfatyy",
+"email": "goody@gamail.com",
+"name":"goodzi Lubia",
+"password":"test1234",
+"img": "https://images.pexels.com/photos/783941/pexels-photo-783941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+"isAdmin":false},
+
+{"username": "king32",
+"email": "Sir@gamail.com",
+"name":"Sir Mushi",
+"password":"test1234",
+"img": "https://images.pexels.com/photos/1314550/pexels-photo-1314550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+"isAdmin":true}
+
+
+]

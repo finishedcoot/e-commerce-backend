@@ -2,6 +2,7 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const Product = require("../models/productModel");
+const User = require("../models/userModel");
 
 dotenv.config("../.");
 
@@ -10,20 +11,18 @@ dotenv.config("../.");
 //   process.env.DATABASE_PASSWORD
 // );
 
-mongoose.connect(process.env.DB_UR).then(() => {
+mongoose.connect(process.env.DB_URL).then(() => {
   console.log("db connection successful");
 });
 
 //Read
-const products = JSON.parse(
-  fs.readFileSync(`${__dirname}/products.json`, "utf-8")
-);
+const users = JSON.parse(fs.readFileSync(`${__dirname}/user.json`, "utf-8"));
 //
 
 //import data to db
 const importData = async () => {
   try {
-    await Product.create(products);
+    await User.create(users);
     console.log("did good");
     process.exit();
   } catch (err) {
